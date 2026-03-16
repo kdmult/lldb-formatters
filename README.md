@@ -1,14 +1,16 @@
 # lldb-formatters
 
-The LLDB formatter for boost classes:
+The LLDB formatter for boost and quantlib classes:
 * `boost::optional`
 * `boost::gregorian::date`
 * `boost::posix_time::ptime`
+* `QuantLib::Date`
 
 
 Make `~/.lldbinit` with the following command to configure the formatters for `lldb`.
 ```
 command script import <path to formatters>/boost_formatter.py
+command script import <path to formatters>/quantlib_formatter.py
 
 ```
 
